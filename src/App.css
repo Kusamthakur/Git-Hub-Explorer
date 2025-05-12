@@ -1,38 +1,354 @@
-.App {
+*{
+
+ margin: 0;
+ padding: 0;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+}
+.body{
+
+  height: 170vh;
+  width: 100vw;
+   background: url('./Components/projectbg.png')repeat;
+   /* background-position: center; */
+   background-size: cover;
+  
+}
+
+.input-box{
+  height: 8vh;
+  width: 30vw;
+  background: transparent;
+  box-shadow: 10px 10px 10px black , inset 10px 10px 10px white;
+  border-radius: 30px;
+position: absolute;
+top: 5%;
+left: 40%;
+  display: flex;
+  justify-content: center; 
+}
+.input{
+  height: 6vh;
+  width: 20vw;
+  background: transparent;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+input::placeholder{
+  font-size: 20px;
+}
+img{
+  margin-top: 10px;
+  height: 20vh;
+  width: 10vw;
+  border-radius: 50%;
+}
+.container{
+  height: 80vh;
+  width: 30vw;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.653) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362);
+  position: absolute;
+  top: 15%;
+  left: 5%;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:  30px;
+   padding: 1rem;
+}
+.username{
   text-align: center;
+  color: white;
+  font-size: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content{
+  position: absolute;
+  top: 40%;
+  height: 40vh;
+  width: 25vw;
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.436) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+
+}
+button{
+  height: 5vh;
+  width: 10vw;
+  background: transparent;
+  border-radius: 20px;
   color: white;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  border: 2px solid whitesmoke;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.followdata{
+  display: flex;
+  height: 10vh;
+  width: 20vw;
+ 
+  justify-content: space-evenly;
+  margin-top: 10px;
+
+}
+.followers{
+  height: 5vh;
+  width: 9vw;
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.421) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 10px;
+  text-align: center;
+   font-size: 1.2rem;
+  
+
+}
+.following{
+  height: 5vh;
+  width: 9vw;
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.421) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.repo{
+   height: 5vh;
+  width: 15vw;
+ box-shadow:10px 10px 10px rgba(0, 0, 0, 0.421) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 10px;
+  text-align: center;
+   font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a{
+  text-decoration: none;
+}
+.bio{
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.container2{
+  height: 80vh;
+  width: 55vw;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.653) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362);
+  position: absolute;
+  top: 15%;
+  left :40%;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:  30px;
+
+}
+.content2{
+  position: absolute;
+  top: 35%;
+  height: 40vh;
+  width: 25vw;
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.653) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+}
+
+/* .repo-table-container {
+  overflow-x: auto;
+  width: 100%;
+} */
+
+
+.repo-table {
+    margin-top: 30px;
+    overflow-y: auto;
+    width: 90%;
+    height: 80%;
+     box-shadow:10px 10px 10px rgba(0, 0, 0, 0.653) ,inset 10px 10px 10px rgba(255, 255, 255, 0.362); 
+  border-radius: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.repo-table h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.repo-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.repo-table th,
+.repo-table td {
+    padding: 8px;
+    border-bottom: 1px solid #555;
+    color: #eee;
+}
+
+.repo-table a {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .input-box {
+    width: 50vw;
+    left: 25%;
   }
-  to {
-    transform: rotate(360deg);
+img{
+   margin-top: 50px;
+  height: 10vh;
+  width: 5vw;
+  border-radius: 50%;
+}
+    
+  .input {
+    width: 40vw;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    height: 100vh;
+    width: 40vw;
+    left: 2%;
+  }
+
+  .content {
+    height: 50vh;
+    width: 35vw;
+  }
+
+  .followdata ,.repo{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .followers, .following {
+    width: 100%;
+    margin: 10px 15px 15px 0px;
+  }
+
+  .container2 {
+    width: 55vw;
+    left: 45%;
+  }
+
+  .repo-table {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-box {
+    width: 70vw;
+    left: 15%;
+  }
+
+  .input {
+    width: 60vw;
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin: 20px auto;
+  }
+
+  .content {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin-top: 20px;
+  }
+
+  .container2 {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin: 20px auto;
+  }
+
+  .repo-table {
+    width: 100%;
+    overflow-x: auto;
+    font-size: 1rem;
+  }
+
+  .repo-table table {
+    min-width: 600px;
+  }
+
+  img {
+    width: 30vw;
+    height: auto;
+  }
+
+  button {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .username {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input-box {
+    width: 90vw;
+    left: 5%;
+  }
+
+  .input {
+    width: 80vw;
+    font-size: 1rem;
+  }
+
+  .followers, .following, .repo {
+    font-size: 1rem;
+  }
+
+  .repo-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .repo-table th,
+  .repo-table td {
+    font-size: 0.8rem;
+    padding: 0.5rem;
   }
 }
